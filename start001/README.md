@@ -56,5 +56,4 @@ When no longer needed, delete the resource group, which deletes the VM and all o
 
 
 ## Reference
-This tutorial was largely inspired from the Microsoft Docs
-https://docs.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-template
+This tutorial was largely inspired from the Microsoft Docs, "[Quickstart: Create an Ubuntu Linux virtual machine using an ARM template](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-template)".
