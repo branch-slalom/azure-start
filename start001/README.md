@@ -30,17 +30,16 @@ If you don\'t have an Azure subscription, create a [free account](https://azure.
     - **Virtual Network Name**: name to be used for the vNet.
     - **Subnet Name**: name for the subnet the VM should use.
     - **Network Security Group Name**: name for the NSG.
-1. Select **Review + create**. After validation completes, select **Create** to create and deploy the VM.
-
-
-The Azure portal is used to deploy the template. In addition to the Azure portal, you can also use the Azure CLI, Azure PowerShell, and REST API. To learn other deployment methods, see [Deploy templates](../../azure-resource-manager/templates/deploy-cli.md).
+3. Select **Review + create**. After validation completes, select **Create** to create and deploy the VM.
 
 ### Review deployed resources
 
 You can use the Azure portal to check on the VM and other resource that were created. After the deployment is finished, select **Go to resource group** to see the VM and other resources.
 
 ## 2. ARM Templates Extra
-1. Create a new ARM template to organize the resources in multiple resource groups
+1. Extend the ARM Template
+
+// TODO: Separate Resource into different ARM templates (eg: VNET in a separate resource), add additional configurations (eg, Ubuntu 20.04 LTS, remove password option, etc)
 
 ## 3. Clean up resources
 
@@ -52,8 +51,9 @@ When no longer needed, delete the resource group, which deletes the VM and all o
 1. On the page for the resource group, select **Delete**.
 1. When prompted, type the name of the resource group and then select **Delete**.
 
-### With the Azure CLI
+### Using Azure CLI
 
+// TODO
 
 ## Reference
 This tutorial was largely inspired from the Microsoft Docs, "[Quickstart: Create an Ubuntu Linux virtual machine using an ARM template](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-template)".
