@@ -54,7 +54,13 @@
       "properties": {
         "serverFarmId": "[resourceId('Microsoft.Web/serverfarms', variables('appServicePlanPortalName'))]",
         "siteConfig": {
-          "linuxFxVersion": "[variables('linuxFxVersion')]"
+          "linuxFxVersion": "[variables('linuxFxVersion')]",
+          "appSettings": [
+            {
+              "name": "NOT_ACTUALLY_A_SECRET_SECRET",
+              "value": "dummysecret"
+            }
+          ]
         }
       },
       "tags": {
