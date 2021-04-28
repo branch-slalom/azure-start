@@ -25,9 +25,8 @@ If you don\'t have an Azure subscription, create a [free account](https://azure.
 You can use the Azure portal to check on the VM and other resource that were created. After the deployment is finished, select **Go to resource group** to see the VM and other resources.
 
 ## 2. ARM Templates Extra
-1. Extend the ARM Template
 
-// TODO: Separate Resource into different ARM templates (eg: VNET in a separate resource), add additional configurations (eg, Ubuntu 20.04 LTS, remove password option, etc)
+1. Extend the ARM Template
 
 ## 3. Clean up resources
 
@@ -36,12 +35,8 @@ You can use the Azure portal to check on the VM and other resource that were cre
 When no longer needed, delete the resource group, which deletes the VM and all of the resources in the resource group. 
 
 1. Select the **Resource group**.
-1. On the page for the resource group, select **Delete**.
-1. When prompted, type the name of the resource group and then select **Delete**.
-
-### Using Azure CLI
-
-// TODO
+2. On the page for the resource group, select **Delete**.
+3. When prompted, type the name of the resource group and then select **Delete**.
 
 ## Reference
 This tutorial was largely inspired from the Microsoft Docs, "[Quickstart: Create an Ubuntu Linux virtual machine using an ARM template](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-template)".
