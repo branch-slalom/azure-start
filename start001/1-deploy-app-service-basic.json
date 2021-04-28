@@ -16,18 +16,12 @@
       "metadata": {
         "description": "Location for all resources."
       }
-    },
-    "sku": {
-      "type": "string",
-      "defaultValue": "F1",
-      "metadata": {
-        "description": "The SKU of App Service Plan."
-      }
     }
   },
   "variables": {
     "appServicePlanPortalName": "[concat('AppServicePlan-', parameters('webAppName'))]",
-    "linuxFxVersion": "DOTNETCORE|3.0"
+    "linuxFxVersion": "DOTNETCORE|3.0",
+    "sku": "F1"
   },
   "resources": [
     {
@@ -36,7 +30,7 @@
       "name": "[variables('appServicePlanPortalName')]",
       "location": "[parameters('location')]",
       "sku": {
-        "name": "[parameters('sku')]"
+        "name": "[variables('sku')]"
       },
       "kind": "linux",
       "properties": {

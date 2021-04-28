@@ -17,7 +17,7 @@ If you don\'t have an Azure subscription, create a [free account](https://azure.
 
     - **Subscription**: select an Azure subscription.
     - **Resource group**: select an existing resource group from the drop-down, or select **Create new**, enter a unique name for the resource group, and then click **OK**.
-    - **Location**: select a location.  For example, **Canada Central**.
+    - **Location**: select a location. For example, **Canada Central**.
 3. Select **Review + create**. After validation completes, select **Create** to create and deploy the VM.
 
 ### Review deployed resources
