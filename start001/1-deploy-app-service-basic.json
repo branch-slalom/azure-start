@@ -35,11 +35,6 @@
       "kind": "linux",
       "properties": {
         "reserved": true
-      },
-      "tags": {
-        "Market": "Toronto Build",
-        "Practice": "Software Engineering",
-        "Project": "Azure Start"
       }
     },
     {
@@ -56,11 +51,6 @@
         "siteConfig": {
           "linuxFxVersion": "[variables('linuxFxVersion')]"
         }
-      },
-      "tags": {
-        "Market": "Toronto Build",
-        "Practice": "Software Engineering",
-        "Project": "Azure Start"
       }
     }
   ]

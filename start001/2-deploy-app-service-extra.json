@@ -37,9 +37,7 @@
         "reserved": true
       },
       "tags": {
-        "Market": "Toronto Build",
-        "Practice": "Software Engineering",
-        "Project": "Azure Start"
+        "TempTag": "TODO: Add a tag"
       }
     },
     {
@@ -63,9 +61,7 @@
         }
       },
       "tags": {
-        "Market": "Toronto Build",
-        "Practice": "Software Engineering",
-        "Project": "Azure Start"
+        "TempTag": "TODO: Add a tag"
       }
     }
   ],

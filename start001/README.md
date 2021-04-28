@@ -28,7 +28,11 @@ You can use the Azure portal to check on the VM and other resource that were cre
 
 1. Extend the ARM Template
     a) Add application settings to the Azure App Service using the ARM template
-    b) Complete the ARM template output to display the deployed Azure App Service Url
+    b) Tag the App Service and the Web App with tags to label the resources with the:
+        * Office / Build Center
+        * Practice Area
+        * Project Code
+    c) Complete the ARM template output to display the deployed Azure App Service Url
 
 2. Redeploy the ARM Template
 	i) Redeploy the template from the Portal in the 'Custom Deployment' blade
