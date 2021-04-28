@@ -28,15 +28,26 @@ You can use the Azure portal to check on the VM and other resource that were cre
 
 1. Extend the ARM Template
     a) Add application settings to the Azure App Service using the ARM template
+    b) Complete the ARM template output to display the deployed Azure App Service Url
 
 2. Redeploy the ARM Template
 	i) Redeploy the template from the Portal in the 'Custom Deployment' blade
 
 	ii) Redeploy the template using the Azure CLI
 ```
-az login
+resourceGroupName=start-test-rg2
+deploymentName=2-deploy-app-service-extra # It's good practice to have this unique to identify each deployment separately for auditing
 az account set -s '<Subscription Name>'
-az deployment group create -g <resource group name> --template-file start001/2-deploy-app-service-basic.json
+az deployment group create \
+    --name=$deploymentName \
+    --resource-group $resourceGroupName \
+    --template-file start001/2-deploy-app-service-extra.json \
+    --mode Complete
+az deployment group show \
+    --name=$deploymentName \
+    --resource-group $resourceGroupName \
+    --filter "properties.outputs" \
+    --output table
 ```
 
 Note: You can monitor your deployment by navigating to the "Resource Group" and under the "Deployments" blade

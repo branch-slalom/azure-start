@@ -47,7 +47,6 @@
       "apiVersion": "2020-06-01",
       "name": "[parameters('webAppName')]",
       "location": "[parameters('location')]",
-
       "dependsOn": [
         "[resourceId('Microsoft.Web/serverfarms', variables('appServicePlanPortalName'))]"
       ],
@@ -69,5 +68,11 @@
         "Project": "Azure Start"
       }
     }
-  ]
+  ],
+  "outputs": {
+    "publicUrl": {
+      "type": "string",
+      "value": "TODO: Return the url of the deployed app service"
+    }
+  }
 }
