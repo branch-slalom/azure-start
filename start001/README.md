@@ -27,6 +27,16 @@ You can use the Azure portal to check on the VM and other resource that were cre
 ## 2. ARM Templates Extra
 
 1. Extend the ARM Template
+    a) Add application settings to the Azure App Service using the ARM template
+
+2.
+    i) Redeploy the template from the Portal in the 'Custom Deployment' pane
+    ii) Redeploy the template using the Azure CLI
+    ```
+        az login
+        az account set -s '<Subscription Name>'
+        az deployment group create -g <resource group name> --template-file start001/2-deploy-app-service-basic.json
+    ```
 
 ## 3. Clean up resources
 
